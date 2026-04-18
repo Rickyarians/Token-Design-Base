@@ -1,0 +1,27 @@
+name: Build Design Tokens
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tokens.json'
+      - 'style-dictionary.config.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22.9
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build tokens
+        run: npx style-dictionary build
