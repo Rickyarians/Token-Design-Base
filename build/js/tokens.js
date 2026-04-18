@@ -11,3 +11,4 @@ export const TokenYellow = "#fec601";
 export const TokenPurple = "#b79ced";
 export const TokenIdHalo = "halo";
 export const TokenEnHalo = "holaaaa";
+export const TokenCoklat = "#efd9ce";
