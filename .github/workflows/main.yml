@@ -29,7 +29,7 @@ jobs:
       - name: Commit build result
         run: |
           git config --global user.name "mamang-color"
-          git config --global user.email ""mamang-color@uayuex.com"
+          git config --global user.email "mamang-color@uayuex.com"
           git add build
           git commit -m "auto build tokens" || echo "No changes"
           git push
