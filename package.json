@@ -1,0 +1,19 @@
+{
+  "name": "token-design-base",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "build/js/tokens.js",
+  "type": "module",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "build": "npx style-dictionary build --config style-dictionary.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "style-dictionary": "^5.4.0"
+  }
+}
