@@ -66,7 +66,7 @@ jobs:
         run: |
           cd React-UI-Component-Base
 
-          BRANCH=update-theme-${{ github.run_id }}
+          BRANCH=update-theme-${{ github.run_id }}-${{ github.run_attempt }}
 
           git checkout -b $BRANCH
 
