@@ -49,7 +49,7 @@ jobs:
       # 9. Commit & push ke branch baru
       - name: Commit & Push to UI repo
         run: |
-          cd ui-repo
+          cd React-UI-Component-Base
 
           BRANCH=update-theme-${{ github.run_id }}
 
