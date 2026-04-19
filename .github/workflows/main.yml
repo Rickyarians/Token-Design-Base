@@ -27,14 +27,23 @@ jobs:
 
       - name: Build tokens
         run: npm run build:all
-      
+  
       - name: Commit build result
         run: |
           git config --global user.name "mamang-color"
           git config --global user.email "mamang-color@uayuex.com"
+
           git add build
-          git commit -m "auto build tokens" || echo "No changes"
-          git pull origin main
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "auto build tokens"
+
+          git pull --rebase origin main   # 🔥 WAJIB
+
           git push
 
     #    # 7. Clone UI repo
