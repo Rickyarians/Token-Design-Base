@@ -1,5 +1,6 @@
 export const theme = {
   "colors": {
+    "abubutek": "#bed8d4",
     "black": "#000000",
     "blue": "#2364aa",
     "coklat": "#efd9ce",
