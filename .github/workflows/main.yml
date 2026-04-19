@@ -37,48 +37,48 @@ jobs:
           git pull origin main
           git push
 
-       # 7. Clone UI repo
-      - name: Clone UI repo
-        run: |
-          git clone https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/Rickyarians/React-UI-Component-Base.git
+    #    # 7. Clone UI repo
+    #   - name: Clone UI repo
+    #     run: |
+    #       git clone https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/Rickyarians/React-UI-Component-Base.git
 
-      # 8. Copy theme ke UI repo
-      - name: Copy theme file
-        run: |
-          cp semantic/react/theme.ts React-UI-Component-Base/theme/theme.ts
+    #   # 8. Copy theme ke UI repo
+    #   - name: Copy theme file
+    #     run: |
+    #       cp semantic/react/theme.ts React-UI-Component-Base/theme/theme.ts
 
-      # 9. Commit & push ke branch baru
-     - name: Commit & Push to UI repo
-        run: |
-          cd React-UI-Component-Base
+    #   # 9. Commit & push ke branch baru
+    #  - name: Commit & Push to UI repo
+    #     run: |
+    #       cd React-UI-Component-Base
 
-          BRANCH=update-theme-${{ github.run_id }}
+    #       BRANCH=update-theme-${{ github.run_id }}
 
-          git checkout -b $BRANCH
+    #       git checkout -b $BRANCH
 
-          git config user.name "token-bot"
-          git config user.email "token-bot@bot.com"
+    #       git config user.name "token-bot"
+    #       git config user.email "token-bot@bot.com"
 
-          git add src/theme/theme.ts
+    #       git add src/theme/theme.ts
 
-          if git diff --cached --quiet; then
-            echo "No changes in theme"
-            exit 0
-          fi
+    #       if git diff --cached --quiet; then
+    #         echo "No changes in theme"
+    #         exit 0
+    #       fi
 
-          git commit -m "chore: update theme from design tokens"
-          git pull origin main
-          git push origin $BRANCH
+    #       git commit -m "chore: update theme from design tokens"
+    #       git pull origin main
+    #       git push origin $BRANCH
 
-      # 10. Create PR
-      - name: Create Pull Request
-        run: |
-          curl -X POST https://api.github.com/repos/Rickyarians/ui-React-UI-Component-Base/pulls \
-          -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
-          -H "Accept: application/vnd.github+json" \
-          -d '{
-            "title": "Update theme from design tokens",
-            "head": "update-theme-${{ github.run_id }}",
-            "base": "main",
-            "body": "Auto-generated from design tokens 🚀"
-          }'
+    #   # 10. Create PR
+    #   - name: Create Pull Request
+    #     run: |
+    #       curl -X POST https://api.github.com/repos/Rickyarians/ui-React-UI-Component-Base/pulls \
+    #       -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+    #       -H "Accept: application/vnd.github+json" \
+    #       -d '{
+    #         "title": "Update theme from design tokens",
+    #         "head": "update-theme-${{ github.run_id }}",
+    #         "base": "main",
+    #         "body": "Auto-generated from design tokens 🚀"
+    #       }'
