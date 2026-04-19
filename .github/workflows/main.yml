@@ -51,7 +51,7 @@ jobs:
 
           git push
 
-       # 7. Clone UI repo
+      # 7. Clone UI repo
       - name: Clone UI repo
         run: |
           git clone https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/Rickyarians/React-UI-Component-Base.git
