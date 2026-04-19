@@ -84,15 +84,15 @@ jobs:
           git pull origin main
           git push origin $BRANCH
 
-      # # 10. Create PR
-      # - name: Create Pull Request
-      #   run: |
-      #     curl -X POST https://api.github.com/repos/Rickyarians/React-UI-Component-Base/pulls \
-      #     -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
-      #     -H "Accept: application/vnd.github+json" \
-      #     -d '{
-      #       "title": "Update theme from design tokens",
-      #       "head": "update-theme-${{ github.run_id }}",
-      #       "base": "main",
-      #       "body": "Auto-generated from design tokens 🚀"
-      #     }'
+      # 10. Create PR
+      - name: Create Pull Request
+        run: |
+          curl -X POST https://api.github.com/repos/Rickyarians/React-UI-Component-Base/pulls \
+          -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+          -H "Accept: application/vnd.github+json" \
+          -d '{
+            "title": "Update theme from design tokens",
+            "head": "update-theme-${{ github.run_id }}",
+            "base": "main",
+            "body": "Auto-generated from design tokens 🚀"
+          }'
