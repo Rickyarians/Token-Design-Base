@@ -9,7 +9,9 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "build": "npx style-dictionary build --config style-dictionary.config.js"
+     "build": "npx style-dictionary build --config style-dictionary.config.js",
+     "generate:theme": "node scripts/script-generate-theme-to-react.js",
+    "build:all": "npm run build && npm run generate:theme"
   },
   "author": "",
   "license": "ISC",
