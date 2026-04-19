@@ -56,10 +56,10 @@ jobs:
         run: |
           git clone https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/Rickyarians/React-UI-Component-Base.git
 
-    #   # 8. Copy theme ke UI repo
-    #   - name: Copy theme file
-    #     run: |
-    #       cp semantic/react/theme.ts React-UI-Component-Base/theme/theme.ts
+      # 8. Copy theme ke UI repo
+      - name: Copy theme file
+        run: |
+          cp semantic/react/theme.ts React-UI-Component-Base/theme/theme.ts
 
     #   # 9. Commit & push ke branch baru
     #  - name: Commit & Push to UI repo
