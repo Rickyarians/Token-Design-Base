@@ -2,13 +2,13 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-export const TokenBlack = "#000000";
-export const TokenWhite = "#ffffff";
-export const TokenGrey = "#bdbdbd";
-export const TokenTropicalTeal = "#73bfb8";
-export const TokenBlue = "#2364aa";
-export const TokenYellow = "#fec601";
-export const TokenPurple = "#b79ced";
-export const TokenIdHalo = "halo";
-export const TokenEnHalo = "holaaaa";
-export const TokenCoklat = "#efd9ce";
+export const TokenColorsBlack = "#000000";
+export const TokenColorsWhite = "#ffffff";
+export const TokenColorsGrey = "#bdbdbd";
+export const TokenColorsTropicalTeal = "#73bfb8";
+export const TokenColorsBlue = "#2364aa";
+export const TokenColorsYellow = "#fec601";
+export const TokenColorsPurple = "#b79ced";
+export const TokenColorsCoklat = "#efd9ce";
+export const TokenLanguageIdHalo = "halo";
+export const TokenLanguageEnHalo = "holaaaa";
