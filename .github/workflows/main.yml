@@ -8,7 +8,12 @@ on:
     paths:
       - 'tokens.json'
       - 'style-dictionary.config.*'
-
+      
+workflow_dispatch:
+  inputs:
+    reason:
+      description: "Kenapa di-run manual"
+      required: false
 jobs:
   build:
     runs-on: ubuntu-latest
