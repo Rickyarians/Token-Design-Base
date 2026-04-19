@@ -92,7 +92,7 @@ jobs:
           -H "Accept: application/vnd.github+json" \
           -d '{
             "title": "Update theme from design tokens",
-            "head": "update-theme-${{ github.run_id }}",
+            "head": "update-theme-${{ github.run_id }}-${{ github.run_attempt }}",
             "base": "main",
             "body": "Auto-generated from design tokens 🚀"
           }'
