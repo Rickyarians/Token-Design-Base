@@ -34,6 +34,7 @@ jobs:
           git config --global user.email "mamang-color@uayuex.com"
           git add build
           git commit -m "auto build tokens" || echo "No changes"
+          git pull origin main
           git push
 
        # 7. Clone UI repo
