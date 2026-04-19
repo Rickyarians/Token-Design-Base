@@ -66,6 +66,7 @@ jobs:
           fi
 
           git commit -m "chore: update theme from design tokens"
+          git pull origin main
           git push origin $BRANCH
 
       # 10. Create PR
