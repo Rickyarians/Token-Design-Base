@@ -3,6 +3,7 @@ export const theme = {
     "abubutek": "#bed8d4",
     "black": "#000000",
     "blue": "#2364aa",
+    "charcoal": "#505168",
     "coklat": "#efd9ce",
     "darkcyan": "#3c887e",
     "grey": "#bdbdbd",
