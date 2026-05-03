@@ -8,7 +8,7 @@ export const theme = {
     "coklat": "#efd9ce",
     "darkcyan": "#3c887e",
     "grey": "#bdbdbd",
-    "greynew": "#bbddbbdd",
+    "greynew": "#bdbdbd",
     "purple": "#b79ced",
     "skyaqua": "#3c887e",
     "springgreen": "#0fff95",
