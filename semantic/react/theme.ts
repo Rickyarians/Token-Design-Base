@@ -7,6 +7,7 @@ export const theme = {
     "coffebean": "#230903",
     "coklat": "#efd9ce",
     "darkcyan": "#3c887e",
+    "eletricrose": "#de369d",
     "grey": "#bdbdbd",
     "greynew": "#bdbdbd",
     "purple": "#b79ced",

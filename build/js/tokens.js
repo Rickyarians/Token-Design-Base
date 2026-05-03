@@ -17,5 +17,6 @@ export const TokenColorsSkyaqua = "#3c887e";
 export const TokenColorsAbubutek = "#bed8d4";
 export const TokenColorsCharcoal = "#505168";
 export const TokenColorsCoffebean = "#230903";
+export const TokenColorsEletricrose = "#de369d";
 export const TokenLanguageIdHalo = "halo";
 export const TokenLanguageEnHalo = "holaaaa";
