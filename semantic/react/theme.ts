@@ -11,6 +11,7 @@ export const theme = {
     "eletricrose": "#de369d",
     "grey": "#bdbdbd",
     "greynew": "#bdbdbd",
+    "pineteal": "#29524a",
     "purple": "#b79ced",
     "skyaqua": "#3c887e",
     "springgreen": "#0fff95",
