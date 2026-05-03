@@ -16,6 +16,7 @@ export const theme = {
     "skyaqua": "#3c887e",
     "springgreen": "#0fff95",
     "tropicalTeal": "#73bfb8",
+    "twilightindigo": "#414361",
     "white": "#ffffff",
     "yellow": "#fec601"
   },
