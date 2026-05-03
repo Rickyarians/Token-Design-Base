@@ -1,25 +1,25 @@
 # Token Design Base
 
-Token Design Base adalah repository source of truth untuk design tokens. Token dikelola dari Figma, disimpan sebagai `tokens.json`, lalu di-generate menjadi artifact yang bisa dipakai oleh design system dan component library.
+Token Design Base is the source of truth repository for design tokens. Tokens are managed in Figma, stored as `tokens.json`, and generated into artifacts that can be consumed by the design system and component library.
 
-Repository ini berperan sebagai token pipeline:
+This repository acts as a token pipeline:
 
-1. Designer mengubah token di Figma melalui Tokens Studio.
-2. Tokens Studio melakukan sync ke repository ini.
-3. GitHub Actions menjalankan validasi dan build token.
-4. Style Dictionary menghasilkan JavaScript token output.
-5. Script semantic theme menghasilkan React theme.
-6. Workflow mengirim update theme ke repository component library melalui pull request otomatis.
+1. Designers update tokens in Figma through Tokens Studio.
+2. Tokens Studio syncs the token source into this repository.
+3. GitHub Actions validates and builds the tokens.
+4. Style Dictionary generates the JavaScript token output.
+5. The semantic theme script generates the React theme.
+6. The workflow sends theme updates to the component library repository through an automated pull request.
 
 ## Output
 
-Project ini menghasilkan beberapa output utama:
+This project generates the following primary outputs:
 
-| File | Fungsi |
+| File | Purpose |
 | --- | --- |
-| `tokens.json` | Source token dari Figma/Tokens Studio. |
-| `build/js/tokens.js` | Output token JavaScript dari Style Dictionary. |
-| `semantic/react/theme.ts` | Theme object untuk React/component library. |
+| `tokens.json` | Token source from Figma/Tokens Studio. |
+| `build/js/tokens.js` | JavaScript token output from Style Dictionary. |
+| `semantic/react/theme.ts` | Theme object for React/component library consumption. |
 
 ## Architecture
 
